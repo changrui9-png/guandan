@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#80000000"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tvHandCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我的手牌识别中..."
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvRemainingCards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="全部剩余未出牌统计..."
+            android:textColor="#FFEB3B"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvAiAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI 实时出牌指导..."
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>
+
